@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Rgb App</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only  (click)="openDevicePage()">
+        <ion-icon name="list"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-list-header [style.background]="color.toString()">
+
+    </ion-list-header>
+    <ion-item>
+      <ion-range min="0" max="255" [(ngModel)]="color.red" color="danger" debounce="300" (ionChange)="sendHexToDevice()">
+        <ion-label range-left>0</ion-label>
+        <ion-label range-right>255</ion-label>
+      </ion-range>
+    </ion-item>
+
+    <ion-item>
+      <ion-range min="0" max="255" [(ngModel)]="color.green" color="secondary" debounce="300" (ionChange)="sendHexToDevice()">
+        <ion-label range-left>0</ion-label>
+        <ion-label range-right>255</ion-label>
+      </ion-range>
+    </ion-item>
+
+    <ion-item>
+      <ion-range min="0" max="255" [(ngModel)]="color.blue" color="primary" debounce="300" (ionChange)="sendHexToDevice()">
+        <ion-label range-left>0</ion-label>
+        <ion-label range-right>255</ion-label>
+      </ion-range>
+    </ion-item>
+
+  </ion-list>
+</ion-content>
