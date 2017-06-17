@@ -55854,10 +55854,10 @@ DevicesPage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* Component */])({
         selector: 'page-devices',template:/*ion-inline-start:"E:\Work\Like\IoT\Arduino\rgbapp\v1\appAndroid\rgbApp\src\pages\devices\devices.html"*/'<!--\n  Generated template for the DevicesPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>devices</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  Danh sách thiết bị\n  <button ion-button color="secondary" (click)="searchDevices()">\n    Dò\n  </button>\n  <ion-list>\n    <button ion-item *ngFor="let device of devices | async" (click)="deviceSelected(device)">\n      {{ device.name }} - {{ device.id }}\n    </button>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"E:\Work\Like\IoT\Arduino\rgbapp\v1\appAndroid\rgbApp\src\pages\devices\devices.html"*/,
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */]])
 ], DevicesPage);
 
-var _a, _b;
 //# sourceMappingURL=devices.js.map
 
 /***/ }),
