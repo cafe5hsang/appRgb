@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { BluetoothSerial } from '@ionic-native/bluetooth-serial';
 
 @Component({
@@ -16,6 +16,7 @@ export class DevicesPage {
 
   ionViewDidLoad() {
     this.bluetooth = this.navParams.get('bluetooth');
+    console.log(this.bluetooth);
   }
 
   deviceSelected(device: any) {
